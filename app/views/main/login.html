@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>LBA Reactive - Please login</title>
+</head>
+<body>
+<h1>Welcome to LBA Reactive<br/>please login</h1>
+<form action="/login" method="POST">
+	<input id="email" placeholder="email" type="text" name="email"/><input id="password" placeholder="password" type="password" name="password"/><button type="submit">GO</button>
+</form>
+<% if (typeof errors !== 'undefined') { %>
+<ul class="errors">
+<%
+	errors['email'].forEach(function(err) {%><li><%-err%></li><%});
+	errors['password'].forEach(function (err) {%><li><%-err%></li><%});
+	errors['general'].forEach(function (err) {%><li><%-err%></li><%});
+%>
+</ul>
+<% } %>
+</body>
+</html>

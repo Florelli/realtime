@@ -1,0 +1,67 @@
+h1 {
+  margin-bottom: 50px; }
+
+/* you can also define the transition style
+   on the base class as well (.repeat-item) */
+.repeat-item.ng-enter,
+.repeat-item.ng-leave {
+  -webkit-transition: 0.5s linear all;
+  transition: 0.5s linear all; }
+
+.repeat-item.ng-enter,
+.repeat-item.ng-leave.ng-leave-active {
+  opacity: 0; }
+
+.repeat-item.ng-leave,
+.repeat-item.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.flashbox {
+  display: inline-block;
+  position: absolute;
+  -webkit-border-radius: 0px 0px 8px 8px;
+  -moz-border-radius: 0px 0px 8px 8px;
+  -ms-border-radius: 0px 0px 8px 8px;
+  -o-border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 8px 8px;
+  padding: 10px;
+  transition: top ease-in 0.5s;
+  -webkit-transition: top ease-in 0.5s;
+  -moz-transition: top ease-in 0.5s;
+  top: -300px;
+  right: 80px; }
+  .flashbox.NEW_MESSAGE {
+    background-color: #ccc;
+    border: 1px solid #777; }
+  .flashbox.USER_JOINED {
+    background-color: #cef;
+    border: 1px solid #777; }
+  .flashbox h2 {
+    margin-top: 0px; }
+  .flashbox.activated {
+    transition: top ease-out 0.6s;
+    -webkit-transition: top ease-out 0.6s;
+    -moz-transition: top ease-out 0.6s;
+    top: 49px; }
+
+.flashinfo {
+  margin-bottom: 20px; }
+  .flashinfo p, .flashinfo h5, .flashinfo h4 {
+    margin-bottom: 5px; }
+
+.notif-count {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  position: relative;
+  top: -11px;
+  left: -4px;
+  font-weight: bold;
+  background: red;
+  color: white; }
